@@ -6,10 +6,11 @@ Vue.use(VueRouter);
 Vue.use(VueResource);
 
 import main from './main.js';
-main();
+main.device();
 
 import App from '../components/App.vue';
 import router from './router.js';
+import Swiper from 'swiper';
 
 new Vue({
     el: '#app',

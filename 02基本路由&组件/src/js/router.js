@@ -1,9 +1,9 @@
 import VueRouter from 'vue-router';
 
-import home from '../components/home.vue';
-import match from '../components/match.vue';
-import video from '../components/video.vue';
-import strategy from '../components/strategy.vue';
+import home from '../components/pages/home.vue';
+import match from '../components/pages/match.vue';
+import video from '../components/pages/video.vue';
+import strategy from '../components/pages/strategy.vue';
 
 export default new VueRouter({
     routes: [
