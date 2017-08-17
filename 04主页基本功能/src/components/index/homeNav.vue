@@ -2,7 +2,7 @@
     <div class="home_nav clearfix">
         <ul>
             <li>
-                <router-link :to="{ name:'heroList' }">
+                <router-link :to="{ name:'heroL' }">
                     <i class="icon_1"></i>
                     <span>英雄介绍</span>
                 </router-link>
