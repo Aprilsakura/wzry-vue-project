@@ -9,7 +9,6 @@
         <!-- 主页导航end -->
     
         <!-- 主页内容start -->
-        <!-- <v-content v-for='(item,i) in contList' :key='i' :type='item'></v-content> -->
         <!-- 主页内容end -->
     </section>
 </template>
@@ -18,7 +17,6 @@
 import iSwiper from '../swipe/swipe.vue';
 import config from '../../js/config.js';
 import iHomeNav from './homeNav.vue';
-import iContent from './homeCont.vue';
 
 export default {
     data() {
@@ -38,7 +36,6 @@ export default {
     components: {
         'v-swipe': iSwiper,
         'v-homeNav': iHomeNav,
-        'v-content': iContent
     },
     created() {
         this.getLunbo();
