@@ -3,8 +3,8 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(item,i) in swipeList" :key="i">
-                    <img :src="item.src">
-                    <h2>{{item.title}}</h2>
+                    <img :src="item.lunboImgpath">
+                    <h2>{{item.lunboTitle}}</h2>
                 </div>
             </div>
             <!-- Add Pagination -->

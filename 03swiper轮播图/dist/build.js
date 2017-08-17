@@ -12920,6 +12920,7 @@ exports.push([module.i, "", ""]);
 
 
 
+
 /* harmony default export */ __webpack_exports__["a"] = ({
     data() {
         return {
@@ -12928,11 +12929,14 @@ exports.push([module.i, "", ""]);
     },
     methods: {
         getLunbo() {
-            this.$http.get(__WEBPACK_IMPORTED_MODULE_1__js_config_js__["a" /* default */].getLunbo).then(rep => {
-                console.log(rep);
-                // if (body.status == 0) {
-                // this.swipeList = body.message.map(item => (item.src = item.img) && item);
-                // }
+            let url = __WEBPACK_IMPORTED_MODULE_1__js_config_js__["a" /* default */].getHomeLunbo;
+            this.$http.get(url).then(rep => {
+                let body = rep.body;
+                if (body.status == 0) {
+                    console.log(this);
+                    this.swipeList = body.message;
+                    console.log(this.swipeList);
+                }
             });
         }
     },
@@ -13008,13 +13012,13 @@ var content = __webpack_require__(39);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("2e7be20c", content, false);
+var update = __webpack_require__(1)("1eff7a22", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-21d50070\",\"scoped\":false,\"hasInlineConfig\":false}!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/selector.js?type=styles&index=0!./swipe.vue", function() {
-     var newContent = require("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-21d50070\",\"scoped\":false,\"hasInlineConfig\":false}!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/selector.js?type=styles&index=0!./swipe.vue");
+   module.hot.accept("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-21d50070\",\"scoped\":false,\"hasInlineConfig\":false}!../../../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/selector.js?type=styles&index=0!./swipe.vue", function() {
+     var newContent = require("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-21d50070\",\"scoped\":false,\"hasInlineConfig\":false}!../../../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!../../../../node_modules/_vue-loader@13.0.4@vue-loader/lib/selector.js?type=styles&index=0!./swipe.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -13032,7 +13036,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 exports.i(__webpack_require__(40), "");
 
 // module
-exports.push([module.i, "\r\n", ""]);
+exports.push([module.i, "\n.swiper-container {\n  width: 100%;\n  height: 3.3rem;\n}\n.swiper-container .swiper-wrapper .swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  background: #fff;\n  /* Center slide text vertically */\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  -webkit-align-items: center;\n  align-items: center;\n}\n.swiper-container .swiper-wrapper .swiper-slide img {\n  height: 3.3rem;\n}\n.swiper-container .swiper-wrapper .swiper-slide h2 {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 0.96rem;\n  line-height: 0.96rem;\n  background: rgba(0, 0, 0, 0.6);\n  font-size: 0.36rem;\n  color: #fff;\n  text-align: left;\n  padding-left: .1rem;\n}\n.swiper-container .swiper-pagination {\n  left: 30% !important;\n}\n", ""]);
 
 // exports
 
@@ -13077,11 +13081,12 @@ exports.push([module.i, "/**\n * Swiper 3.4.2\n * Most modern mobile touch slide
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     props: ['swipeList'],
-    mounted() {
+    updated() {
         new __WEBPACK_IMPORTED_MODULE_0_swiper___default.a('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-            autoplay: 5000
+            autoplay: 5000,
+            loop: true
         });
     }
 });
@@ -18466,9 +18471,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       staticClass: "swiper-slide"
     }, [_c('img', {
       attrs: {
-        "src": item.src
+        "src": item.lunboImgpath
       }
-    }), _vm._v(" "), _c('h2', [_vm._v(_vm._s(item.msg))])])
+    }), _vm._v(" "), _c('h2', [_vm._v(_vm._s(item.lunboTitle))])])
   })), _vm._v(" "), _c('div', {
     staticClass: "swiper-pagination"
   })])])
@@ -18489,10 +18494,10 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const domain = 'http://139.199.192.48:9092/';
+const domain = 'http://139.199.192.48:9092';
 /* harmony default export */ __webpack_exports__["a"] = ({
     domin: domain,
-    getLunbo: domain + '/api/getlunbo',
+    getHomeLunbo: domain + '/api/getlunbo?type=home',
     
 });
 

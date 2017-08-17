@@ -23,12 +23,7 @@ export default {
                 let body = rep.body;
                 if (body.status == 0) {
                     console.log(this);
-                    this.swipeList = body.message.map(item => {
-                        item.src = item.lunboImgpath;
-                        item.url = item.Url;
-                        item.title = item.lunboTitle;
-                        return item;
-                    });
+                    this.swipeList = body.message;
                     console.log(this.swipeList);
                 }
             });
