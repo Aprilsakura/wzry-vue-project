@@ -4,7 +4,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="(item,i) in swipeList" :key="i">
                     <img :src="item.src">
-                    <h2>{{item.msg}}</h2>
+                    <h2>{{item.title}}</h2>
                 </div>
             </div>
             <!-- Add Pagination -->
@@ -19,16 +19,18 @@ export default {
     props: [
         'swipeList'
     ],
-    mounted() {
+    updated() {
         new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-            autoplay: 5000
+            autoplay: 5000,
+            loop: true
         });
     }
 }
 </script>
 
-<style>
+<style lang='less'>
 @import '../../static/css/swiper.min.css';
+@import '../../style/swipe.less';
 </style>

@@ -8,19 +8,37 @@
 
 <script>
 import mSwiper from '../swipe/swipe.vue';
+import config from '../../js/config.js';
 
 export default {
     data() {
         return {
-            'swipeList': [
-                { src: "http://ossweb-img.qq.com/upload/adw/image/1496806834/1496806834.jpg", msg: "王者猴教学" },
-                { src: "http://ossweb-img.qq.com/upload/adw/image/1497856410/1497856410.jpg", msg: "KPL战报" },
-                { src: "http://ossweb-img.qq.com/upload/adw/image/1497926134/1497926134.jpg", msg: "芈月英雄专题" }
-            ]
+            'swipeList': []
+        }
+    },
+    methods: {
+        getLunbo() {
+            let url = config.getHomeLunbo;
+            this.$http.get(url).then(rep => {
+                let body = rep.body;
+                if (body.status == 0) {
+                    console.log(this);
+                    this.swipeList = body.message.map(item => {
+                        item.src = item.lunboImgpath;
+                        item.url = item.Url;
+                        item.title = item.lunboTitle;
+                        return item;
+                    });
+                    console.log(this.swipeList);
+                }
+            });
         }
     },
     components: {
         'v-swipe': mSwiper
+    },
+    created() {
+        this.getLunbo();
     }
 }
 </script>
