@@ -1,0 +1,149 @@
+.videoContImg{
+    width: 100%;
+    height: 15rem;
+}
+.videoContImg .mod_player_v{
+    width: 100%;
+    height: 100%;
+}
+.videoConPre{
+    position: relative;
+    width: 20.8333rem;
+    margin: 1rem auto;
+    border: 1px solid #dcdcdc;
+    padding-left: 19.3%;
+}
+.videoConPre .videoConPre_l{
+    position: absolute;
+    width: 4.028333rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 0px;
+}
+.videoConPre .videoConPre_l img{
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    margin-top: -50%;
+}
+.videoConPre .videoConTxt{
+    position: relative;
+    width: 53.129%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0.4rem 0;
+}
+.videoConTxt h2{
+    color: #2F2D2D;
+    font-size: 0.9rem;
+}
+.videoConTxt .videoConTxt_t{
+    color: #6d6d6f;
+    font-size: 0.6667rem;
+    margin: 0.24rem 0;
+}
+.videoConTxt p{
+    color: #6d6d6f;
+    font-size: 0.6667rem;
+}
+.videoCont_list{
+    position: relative;
+    width: 25.83333rem;
+    margin: 0 auto;
+    height: 10rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+.videoContListAb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 101.917rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.videoCont_list ul li{
+    position: relative;
+    width: 9.79166673rem;
+    height: 8.2rem;
+    margin-bottom: 1.3333rem;
+    float: left;
+    margin-right: 0.4rem;
+}
+.videoCont_list ul li img{
+    position: relative;
+    width: 9.79166673rem;
+    height: 6.875rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 0.4rem;
+}
+.videoCont_list ul li span{
+    background: url(../images/video_btn.png) no-repeat left center;
+    background-size: 21%;
+    padding-left: 17px;
+    bottom: 19.5%;
+    position: absolute;
+    left: 3.5%;
+    font-size: 0.583333rem;
+    color: #8c8c8e;
+}
+
+
+/*页脚*/
+
+.home_bottom {
+    background: url(../images/navnew11.png) no-repeat 50% 0;
+    left: 0;
+    top: auto;
+    height: 3.125rem;
+    width: 100%;
+    bottom: 0;
+    background-size: 100% auto;
+    font-size: 0;
+    z-index: 10;
+    position: fixed;
+}
+
+.home_bottom a {
+    width: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 100%;
+    display: inline-block;
+}
+
+.home_bottom ul {
+    height: 100%;
+}
+
+.home_bottom ul li {
+    width: 25%;
+    height: 3.125rem;
+    float: left;
+}
+
+.currentL {
+    background: url(../images/navnew2.png) no-repeat 50% 0;
+    background-size: 400% auto;
+}
+
+.home_bottom ul li:nth-child(1).currentL {
+    background-position: 0 50%
+}
+
+.home_bottom ul li:nth-child(2).currentL {
+    background-position: 33.5% 49%
+}
+
+.home_bottom ul li:nth-child(3).currentL {
+    background-position: 67% 49%
+}
+
+.home_bottom ul li:nth-child(4).currentL {
+    background-position: 100% 49%
+}

@@ -1,0 +1,84 @@
+.video_list, .video_search, .mess_list, .info_title-cont, .info_cont, .newSay_cont, .info-list {
+    width: 25.83333rem;
+    margin: 0 auto;
+}
+.info_title {
+    width: 100%;
+    height: 2.6667rem;
+    border-bottom: 1px solid #d4d4d5;
+    margin-bottom: 0.6667rem;
+}
+
+.info_title-cont {
+    position: relative;
+    height: 100%;
+}
+
+.info-list {
+    position: relative;
+}
+
+.info_title-cont .backBtn {
+    position: absolute;
+    width: 0.6667rem;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    border: 0;
+    background: url("../images/backBg.png") no-repeat center;
+    background-size: 100%;
+}
+
+.info_title-cont h2 {
+    display: inline-block;
+    color: #4394e4;
+    font-size: 0.91667rem;
+    height: 2.6667rem;
+    font-weight: bold;
+    line-height: 2.6667rem;
+    margin-left: 5%;
+    width: 73%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.info_title-cont time {
+    color: #9fa0a0;
+    font-size: 0.6667rem;
+    float: right;
+    line-height: 2.6667rem;
+}
+
+.info_cont {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 1.25rem;
+    width:90%;
+}
+
+.info_cont p {
+    color: #333333;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.70833rem;
+}
+.info_cont img{max-width: 100%;height: auto!important;}
+
+.info_cont .shareBtn a {
+    width: 6.20833rem;
+    height: 1.916667rem;
+    text-align: center;
+    line-height: 1.916667rem;
+    margin: 0.7rem auto;
+    background: #2784e1;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 0.6667rem;
+    display: block;
+}
+.info_cont div span{
+    font-size:medium;
+    font-family:Î¢ÈíÑÅºÚ;
+}

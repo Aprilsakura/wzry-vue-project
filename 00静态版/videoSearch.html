@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="src/css/base.css">
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link rel="stylesheet" type="text/css" href="src/css/video.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/match-video-search.css"/>
+    <script type="text/javascript">
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+    <title>王者荣耀</title>
+</head>
+<body>
+<div class="wrap">
+    <!-- 内容区域start -->
+    <div class="content">
+        <div class="home_top">
+            <div class="logo_cont">
+                <a class="logo_img" href="index.html">
+                    <img src="src/images/logo.png" alt="LOGO">
+                </a>
+                <div class="logo_title">
+                    <h1>王者荣耀</h1>
+                    <p>王者相见，打成一片</p>
+                </div>
+            </div>
+            <div class="download">
+                <a href="/m/m201606/play.shtml"></a>
+            </div>
+        </div>
+        <section id="content_wrap">
+            <!-- 视频站内容开始-->
+            <div class="search">
+                <form action="#" method="get">
+                    <input type="search" name="search" id="search" placeholder="请输入你想要搜索的英雄名">
+                    <input type="submit" class="okBtn" id="okBtn" value="">
+                </form>
+            </div>
+            <!--搜索筛选-->
+            <div class="video_search">
+                <div class="video_search-txt clearfix">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">排序</a>
+                        </li>
+                        <li id="sIdxTime" class="flag txtCurrent">
+                            <a href="javascript:;">按时间↑↓</a>
+                        </li>
+                        <li id="iTotalPlay" class="flag">
+                            <a href="javascript:;">按热度↑↓</a>
+                        </li>
+                        <li id="startChoose" class="xuan">
+                            <a href="javascript:;">筛选 <span id="arrowBy">∨</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="choosCont" class="video_choose_cont" style="display: none;">
+                    <div class="video_search-choose">
+                        <div class="video_search-choose_cont clearfix">
+                            <h2>解说:</h2>
+                            <div class="video_search-choose_cC video_search-choose_t">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">重生</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">幽魂</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">鹿飞飞</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">小辰</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">苏苏</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">少帅月</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">美人鱼头</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">李九</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="video_search-choose">
+                        <div class="video_search-choose_cont clearfix">
+                            <h2>赛事:</h2>
+                            <div class="video_search-choose_cC video_search-choose_t">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">KPL职业联赛</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">校园争霸赛</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">KOC王者城市赛</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">TGA大奖赛</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">QGC联赛</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">WGC精英赛</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">KCC王者冠军杯</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="video_search-choose">
+                        <div class="video_search-choose_cont clearfix">
+                            <h2>英雄:</h2>
+                            <div class="video_search-choose_hero">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">战士</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">法师</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">坦克</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">刺客</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">射手</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">辅助</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_search-choose">
+                        <div class="video_search-choose_cont clearfix">
+                            <h2>娱乐:</h2>
+                            <div class="video_search-choose_cC video_search-choose_t">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">闯关冒险</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">搞笑娱乐</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">击杀集锦</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">射手</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">辅助</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_search-choose">
+                        <div class="video_search-choose_cont clearfix">
+                            <h2>官方:</h2>
+                            <div class="video_search-choose_cC video_search-choose_t">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">品牌宣传</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">英雄技能</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_cont">
+                <!--视频列表-->
+                <div class="list_cont">
+                    <ul class="video_list clearfix" id="video_list">
+                        <li>
+                            <a href="./match/video.html"  title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">
+                                <img src="src/images/video_list.png">
+                                <span class="ico_play"></span>
+                                <span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>
+                            </a>
+                            <div class="v_infor">
+                            <span class="v_num">
+                                <span class="ico_video_num"></span>1.4万
+                            </span>
+                                <span class="v_time">06-23</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./match/video.html"  title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">
+                                <img src="src/images/video_list.png">
+                                <span class="ico_play"></span>
+                                <span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>
+                            </a>
+                            <div class="v_infor">
+                            <span class="v_num">
+                                <span class="ico_video_num"></span>1.4万
+                            </span>
+                                <span class="v_time">06-23</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./match/video.html"  title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">
+                                <img src="src/images/video_list.png">
+                                <span class="ico_play"></span>
+                                <span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>
+                            </a>
+                            <div class="v_infor">
+                            <span class="v_num">
+                                <span class="ico_video_num"></span>1.4万
+                            </span>
+                                <span class="v_time">06-23</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./match/video.html"  title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">
+                                <img src="src/images/video_list.png">
+                                <span class="ico_play"></span>
+                                <span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>
+                            </a>
+                            <div class="v_infor">
+                            <span class="v_num">
+                                <span class="ico_video_num"></span>1.4万
+                            </span>
+                                <span class="v_time">06-23</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./match/video.html"  title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">
+                                <img src="src/images/video_list.png">
+                                <span class="ico_play"></span>
+                                <span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>
+                            </a>
+                            <div class="v_infor">
+                            <span class="v_num">
+                                <span class="ico_video_num"></span>1.4万
+                            </span>
+                                <span class="v_time">06-23</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./match/video.html" title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">
+                                <img src="src/images/video_list.png">
+                                <span class="ico_play"></span>
+                                <span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>
+                            </a>
+                            <div class="v_infor">
+                            <span class="v_num">
+                                <span class="ico_video_num"></span>1.4万
+                            </span>
+                                <span class="v_time">06-23</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="video_more" id="video_more">
+                        <a href="javascript:;" title="点击查看更多">点击查看更多</a>
+                    </div>
+                </div>
+                <!-- 视频站内容结束-->
+
+            </div>
+
+        </section>
+    </div>
+    <!-- 内容区域end -->
+    <!-- 底部导航start -->
+    <div class="home_bottom">
+        <ul class="clearfix">
+            <li>
+                <a href="match/index.html">首页</a>
+            </li>
+            <li class="currentL">
+                <a href="video.html">视频</a>
+            </li>
+            <li>
+                <a href="strategy.html">攻略</a>
+            </li>
+            <li>
+                <a href="match.html" >赛事</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 底部导航end -->
+</div>
+</body>
+<script type="text/javascript" src='src/js/selecctTag.js'></script>
+<script>
+    var videoOrderLis = document.querySelectorAll('.video_search-txt>ul>li.flag');
+    var videoChooseLis = document.querySelectorAll('.video_search-choose_cont ul li');
+    var orderBtn = document.getElementById("startChoose");//筛选按钮
+    var arrowBy = document.getElementById("arrowBy"); //筛选符号
+    var choosCont = document.getElementById("choosCont");//筛选集合
+    var videoListUl = document.getElementById("video_list"); //视频列表框
+    var clickMore = document.getElementById("video_more");//点击加载更多
+
+    selectTag(videoOrderLis,"txtCurrent");
+    selectTag(videoChooseLis,"current");
+    orderBtn.addEventListener("click",function(){
+        if(choosCont.style.display == "none"){
+            choosCont.style.display = "block";
+            arrowBy.innerHTML = "∧";
+        }else {
+            choosCont.style.display = "none";
+            arrowBy.innerHTML = "∨";
+        }
+    });
+    clickMore.addEventListener("click",function(){
+        var moreLiContent =    '<a href="./match/video.html" title="【KPL预选赛】第1周 LGD 0-2 GK 第1场">'+
+                                   '<img src="src/images/video_list.png">'+
+                                   '<span class="ico_play"></span>'+
+                                   '<span class="video_title">【KPL预选赛】第1周 LGD 0-2 GK 第1场</span>'+
+                               '</a>'+
+                                '<div class="v_infor">'+
+                                    '<span class="v_num">'+
+                                    '<span class="ico_video_num"></span>1.4万'+
+                                    '</span>'+
+                                    '<span class="v_time">06-23</span>'+
+                               '</div>'
+                            ;
+        for(var i=0; i<6; i++){
+            var li = document.createElement("li");
+            li.innerHTML = moreLiContent;
+            videoListUl.appendChild(li);
+        }
+        this.children[0].innerHTML = "加载完毕!";
+    });
+</script>
+</html>
