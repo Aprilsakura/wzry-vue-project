@@ -18,7 +18,7 @@
     
         <!--video-->
         <div class="mc_video">
-            <img class="video_img" src="src/images/kpl.jpg" alt="KPL 王者职业联赛">
+            <img class="video_img" src="../../images/kpl.jpg" alt="KPL 王者职业联赛">
             <div class="video_mask">
                 <span class="video_btn_play"></span>
             </div>
