@@ -42,7 +42,21 @@ module.exports = {
                 test: /\.vue$/,
                 exclude: /node_modules/,
                 use: 'vue-loader'
-            }
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['es2015'],
+                            plugins: ['transform-runtime']
+                        },
+
+                    }
+                ]
+            },
         ]
     }
 }

@@ -8,5 +8,6 @@ export default {
     getRaiders: domain + '/api/getraiders',
 
     getVieoLunbo: domain + '/api/getlunbo?type=video',
-
+    getVideoType: domain + '/api/getvideotype',
+    
 }
