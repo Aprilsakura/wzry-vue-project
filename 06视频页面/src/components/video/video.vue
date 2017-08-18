@@ -6,6 +6,9 @@
         <!-- 视频站内容开始-->
         <v-vContent></v-vContent>
         <!-- 视频站内容结束-->
+        <div class="video_more" id="video_more">
+            <a href="http://pvp.qq.com/m/m201606/search.shtml" title="点击查看更多">点击查看更多</a>
+        </div>
     </section>
 </template>
 
@@ -45,6 +48,7 @@ export default {
 }
 </script>
 
-<style lang='less'>
-@import '../../style/video.less';
+<style>
+
 </style>
+

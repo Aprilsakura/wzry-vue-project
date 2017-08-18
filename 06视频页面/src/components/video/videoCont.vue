@@ -55,6 +55,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang='less'>
+@import '../../style/video.less';
 </style>
