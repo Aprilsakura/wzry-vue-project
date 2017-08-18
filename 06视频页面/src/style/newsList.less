@@ -1,0 +1,43 @@
+.news_list {
+    li {
+        position: relative;
+        height: 0.38rem;
+        line-height: 0.38rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.28rem;
+        a {
+            display: inline-block;
+            width: 5rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            .category {
+                color: #464f73;
+            }
+            .split {
+                display: none;
+                height: 0.38rem;
+                display: inline-block;
+                margin: 0 0.02rem;
+            }
+            .title {
+                width: 5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .time {
+                position: absolute;
+                right: 0;
+                color: #777777;
+            }
+        }
+    }
+    &:hover {
+        background: #e3e6ea;
+        border-radius: 6px;
+        a {
+            color: #8a9bc7;
+        }
+    }
+}

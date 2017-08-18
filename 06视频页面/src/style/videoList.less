@@ -1,0 +1,34 @@
+.video_list {
+    li {
+        position: relative;
+        width: 3.36rem;
+        height: auto;
+        float: left;
+        margin: 0 0.1rem 0.25rem 0;
+        font-size: 0.28rem;
+        img {
+            display: block;
+            width: 3.36rem;
+            height: 1.9rem;
+            border-radius: 6px;
+        }
+        .ico_play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -0.48rem 0 0 -0.28rem;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        .video_title {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+            margin-top: 0.18rem;
+        }
+    }
+}
