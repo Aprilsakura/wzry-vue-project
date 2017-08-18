@@ -1,0 +1,66 @@
+.strategy_list {
+    li {
+        margin-bottom: 0.3rem;
+        .strategy_pic {
+            float: left;
+            width: 1.07rem;
+            height: 1.07rem;
+            margin-right: 0.25rem;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+            }
+        }
+        .strategy_cont {
+            float: left;
+            position: relative;
+            width: 5.50rem;
+            height: 1.07rem;
+            overflow: hidden;
+            a {
+                color: #a4abae;
+                font-size: 0.24rem;
+                .strategy_title {
+                    width: 77%;
+                    display: block;
+                    color: #333;
+                    font-size: 0.28rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .strategy_desc {
+                    display: block;
+                    width: 77%;
+                    margin-top: 0rem;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                }
+                .strategy_time {
+                    position: absolute;
+                    bottom: -2px;
+                    right: 0;
+                    color: #bdc2c5;
+                    font-size: 0.26rem;
+                }
+                .strategy_num {
+                    position: absolute;
+                    top: 2px;
+                    right: 0;
+                    color: #bdc2c5;
+                    font-size: 0.26rem;
+                }
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+    }
+}
