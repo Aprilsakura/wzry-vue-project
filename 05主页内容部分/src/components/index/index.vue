@@ -9,7 +9,7 @@
         <!-- 主页导航end -->
     
         <!-- 主页内容start -->
-        <v-content v-for='(item,i) in contList' :key='i' :type='item'></v-content>
+        <v-iContent v-for='(item,i) in contList' :key='i' :type='item'></v-iContent>
         <!-- 主页内容end -->
     </section>
 </template>
@@ -43,7 +43,7 @@ export default {
     components: {
         'v-swipe': iSwiper,
         'v-homeNav': iHomeNav,
-        'v-content': iContent
+        'v-iContent': iContent
     },
     created() {
         this.getLunbo();
