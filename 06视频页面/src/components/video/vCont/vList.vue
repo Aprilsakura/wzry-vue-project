@@ -3,7 +3,7 @@
     <div class="list_cont">
         <ul class="video_list clearfix" id="video_list">
             <li v-for='(item,i) in list' :key='i'>
-                <a :href="item.url" title="item.title">
+                <a :href="item.url" :title="item.title">
                     <img :src="item.img">
                     <span class="ico_play"></span>
                     <span class="video_title">{{item.title}}</span>
