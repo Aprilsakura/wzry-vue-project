@@ -15,7 +15,7 @@
         <div class="mc_lineinfo">
             <span class="mc_w">进行中</span>
         </div>
-    
+
         <!--video-->
         <div class="mc_video">
             <img class="video_img" src="../../images/kpl.jpg" alt="KPL 王者职业联赛">
@@ -23,7 +23,7 @@
                 <span class="video_btn_play"></span>
             </div>
         </div>
-    
+
         <v-mList></v-mList>
     </section>
 </template>

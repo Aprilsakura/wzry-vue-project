@@ -25,7 +25,7 @@ export default {
         getNews() {
             let url = config.getHomeNews + '&pageSize=3';
             HTTP.get(url, body => {
-                if (body.status == 0) this.list = body.message;
+               this.list = body.message;
             })
         }
     },

@@ -24,7 +24,7 @@ export default {
         getVideo() {
             let url = config.getHomeVideos + '?typelevel1&pageSize=4';
             HTTP.get(url, body => {
-                if (body.status == 0) this.list = body.message;
+               this.list = body.message;
             })
         }
     },

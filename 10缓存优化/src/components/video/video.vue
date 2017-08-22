@@ -29,7 +29,7 @@ export default {
         getLunbo() {
             let url = config.getVideoLunbo;
             HTTP.get(url, body => {
-                if (body.status == 0) this.swipeList = body.message;
+                this.swipeList = body.message;
             });
         }
     },

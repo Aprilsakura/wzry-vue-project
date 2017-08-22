@@ -25,7 +25,7 @@ export default {
         getHomeNav() {
             let url = config.getHomeNav;
             HTTP.get(url, body => {
-                if (body.status == 0) this.navList = body.message;
+               this.navList = body.message;
             })
         }
     },

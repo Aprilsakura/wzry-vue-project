@@ -35,7 +35,7 @@ export default {
         getStategyList() {
             let url = config.getStategy + '?type=' + arguments[0];
             HTTP.get(url, body => {
-                if (body.status == 0) this.stategyList = body.message;
+                this.stategyList = body.message;
             });
         }
     }

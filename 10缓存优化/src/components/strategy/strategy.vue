@@ -36,7 +36,7 @@ export default {
         getLunbo() {
             let url = config.getStategyLunbo;
             HTTP.get(url, body => {
-                if (body.status == 0) this.swipeList = body.message;
+                this.swipeList = body.message;
             });
         }
     },
@@ -50,7 +50,7 @@ export default {
     updated() {
         new Swiper('.swiper-container', {
             autoplay: 3000,
-            loop: true,
+            // loop: true,
         });
     }
 }

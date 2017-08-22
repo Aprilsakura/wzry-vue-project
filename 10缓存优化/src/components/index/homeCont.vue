@@ -39,7 +39,7 @@ export default {
         getRaider() {
             let url = config.getHomeRaiders;
             HTTP.get(url, body => {
-                if (body.status == 0) this.matchList = body.message;
+               this.matchList = body.message;
             })
         }
     },

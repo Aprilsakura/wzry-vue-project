@@ -13213,7 +13213,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
         getLunbo() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getHomeLunbo;
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.swipeList = body.message;
+                this.swipeList = body.message;
             });
         }
     },
@@ -18895,7 +18895,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAADyCAMAAAAl
         getHomeNav() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getHomeNav;
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.navList = body.message;
+                this.navList = body.message;
             });
         }
     },
@@ -19081,7 +19081,7 @@ exports.push([module.i, "\n.index_cont {\n  margin-top: 0.25rem;\n  padding: 0 0
         getRaider() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getHomeRaiders;
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.matchList = body.message;
+                this.matchList = body.message;
             });
         }
     },
@@ -19220,7 +19220,7 @@ exports.push([module.i, "\n.news_list li {\n  position: relative;\n  height: 0.3
         getNews() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getHomeNews + '&pageSize=3';
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.list = body.message;
+                this.list = body.message;
             });
         }
     },
@@ -19394,7 +19394,7 @@ exports.push([module.i, "\n.video_list li {\n  position: relative;\n  width: 3.3
         getVideo() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getHomeVideos + '?typelevel1&pageSize=4';
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.list = body.message;
+                this.list = body.message;
             });
         }
     },
@@ -19913,7 +19913,7 @@ exports.push([module.i, "\n.mc_allB {\n  position: relative;\n  width: 100%;\n  
         getMList() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getMatch;
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.list = body.message;
+                this.list = body.message;
             });
         }
     },
@@ -20165,7 +20165,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
         getLunbo() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getVideoLunbo;
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.swipeList = body.message;
+                this.swipeList = body.message;
             });
         }
     },
@@ -20332,7 +20332,7 @@ exports.push([module.i, "\n.video_cont .list_cont {\n  margin-top: 0.25rem;\n  p
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getVideos + '?type=' + arguments[0];
             console.log(url);
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.videoList = body.message;
+                this.videoList = body.message;
             });
         }
     },
@@ -20864,7 +20864,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAMAAACO
         getLunbo() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getStategyLunbo;
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.swipeList = body.message;
+                this.swipeList = body.message;
             });
         }
     },
@@ -21018,7 +21018,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
         getStategyList() {
             let url = __WEBPACK_IMPORTED_MODULE_0__js_config_js___default.a.getStategy + '?type=' + arguments[0];
             __WEBPACK_IMPORTED_MODULE_1__js_http_js___default.a.get(url, body => {
-                if (body.status == 0) this.stategyList = body.message;
+                this.stategyList = body.message;
             });
         }
     }

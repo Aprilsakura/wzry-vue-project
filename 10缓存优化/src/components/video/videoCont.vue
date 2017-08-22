@@ -42,7 +42,7 @@ export default {
             let url = config.getVideos + '?type=' + arguments[0];
             console.log(url);
             HTTP.get(url, body => {
-                if (body.status == 0) this.videoList = body.message
+                this.videoList = body.message
             })
         }
     },

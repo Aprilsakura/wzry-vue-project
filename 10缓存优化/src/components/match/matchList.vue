@@ -35,7 +35,7 @@ export default {
         getMList() {
             let url = config.getMatch;
             HTTP.get(url, body => {
-                if (body.status == 0) this.list = body.message
+                this.list = body.message
             })
         }
     },
