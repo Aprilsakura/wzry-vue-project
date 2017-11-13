@@ -29,15 +29,15 @@
 </template>
 
 <script>
-import config from '../../js/config.js';
-import mList from './matchList.vue';
+import config from "../../js/config.js";
+import mList from "./matchList.vue";
 export default {
-    components: {
-        'v-mList': mList
-    }
-}
+  components: {
+    "v-mList": mList
+  }
+};
 </script>
 
 <style lang='less'>
-@import '../../style/match.less';
+@import "../../style/match.less";
 </style>
